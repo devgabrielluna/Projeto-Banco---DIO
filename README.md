@@ -1,36 +1,31 @@
-# Projeto Banco - Desafio DIO 🏦💻
+# 💰 Projeto Banco DIO - Sistema Bancário em Python
 
-Este é um projeto simples de um sistema bancário, criado como parte do desafio do bootcamp de **Python** oferecido pela **Digital Innovation One (DIO)** na turma de **Suzano**. O objetivo deste desafio é simular operações bancárias como **depósito**, **saque** e **visualização de extrato**.
+Este projeto é uma simulação de um **sistema bancário** desenvolvido como parte do desafio da [Digital Innovation One (DIO)](https://web.dio.me/). O código foi escrito em Python puro e executado via terminal, com o objetivo de praticar conceitos de programação como funções, estruturas de repetição, condicionais, manipulação de listas e dicionários.
 
-## Funcionalidades 🚀
+## 🚀 Funcionalidades
 
-O sistema permite as seguintes funcionalidades:
+O sistema oferece as seguintes operações:
 
-1. **Depositar** 💰:
-   O usuário pode realizar depósitos na conta. O valor depositado é adicionado ao saldo da conta e registrado no extrato.
+- **[1] Depositar**: Permite realizar depósitos na conta.
+- **[2] Sacar**: Realiza saques respeitando limites diários.
+- **[3] Extrato**: Exibe todas as movimentações e o saldo atual.
+- **[4] Nova Conta**: Cria uma nova conta para um usuário existente.
+- **[5] Listar Contas**: Lista todas as contas criadas com seus respectivos titulares.
+- **[6] Novo Usuário**: Cadastra um novo usuário com CPF, nome, data de nascimento e endereço.
+- **[7] Sair**: Finaliza a aplicação.
 
-2. **Sacar** 💸:
-   O usuário pode realizar saques, desde que haja saldo suficiente na conta. O valor do saque é subtraído do saldo e registrado no extrato.
+## 🛠️ Tecnologias Utilizadas
 
-3. **Ver Extrato** 🧾:
-   O sistema exibe um extrato contendo todas as transações realizadas (depósitos e saques) e o saldo atual da conta.
+- **Python 3.10+**
+- Bibliotecas padrão: `datetime`, `textwrap`
 
-4. **Interface Simples** 📱:
-   O código utiliza um menu interativo, onde o usuário escolhe as opções digitando números de 1 a 4:
-   - 1: Realizar Depósito
-   - 2: Realizar Saque
-   - 3: Ver Extrato
-   - 4: Sair
+## 📂 Estrutura de Dados
 
-## Tecnologias Utilizadas 🛠️
-
-- **Python**: Linguagem de programação utilizada para implementar o sistema bancário.
-- **Git**: Utilizado para controle de versão e versionamento do código.
-- **GitHub**: Hospedagem do repositório para compartilhamento do código.
-
-## Como Usar 🔧
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/devgabrielluna/Projeto-Banco---DIO.git
+- **Usuário**:
+  ```python
+  {
+      'cpf': '12345678900',
+      'nome': 'Nome do Usuário',
+      'data_nascimento': 'dd-mm-aaaa',
+      'endereco': 'Rua, Nº - Bairro - Cidade/UF'
+  }
